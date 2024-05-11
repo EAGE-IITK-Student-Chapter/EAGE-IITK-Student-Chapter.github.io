@@ -49,9 +49,7 @@ body{
     }
     .footer {
       position: relative;
-      left: 0;
       bottom: -50vh;
-      width: 100%;
       color: white;
       text-align: center;
     }
@@ -115,7 +113,7 @@ body{
 .accordio{
     margin-top: 5vh;
 }
-.accordion {
+.acc-style {
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -129,7 +127,7 @@ body{
     transition: 0.4s;
   }
   
-  .active, .accordion:hover {
+  .active, .acc-style:hover {
     background-color: #ccc;
   }
   

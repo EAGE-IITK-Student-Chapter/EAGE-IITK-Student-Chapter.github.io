@@ -20,6 +20,30 @@
             max-width: 2000px;
             margin: auto;
         }
+        .accordion-button{
+            text-justify: inter-word;
+            font-weight: bold;
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+        .accordion-item{
+            border: 1px solid #ffffff;
+        }
+        .accordion-button:hover{
+            background-color: #ccc;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #ccc;
+            color: #444;
+        }
     </style>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -94,32 +118,57 @@
         </h2>
     </div>
 </div>
-    
-      
-      <div class="accordio" style="margin-left:80px; margin-right:80px; text-align: center;
-        text-justify: inter-word;">
-      <p style="font-size: large;">Stay tuned for upcoming events for informative talks, workshops, insightful webinars, and interactive sessions aimed at helping you expand your knowledge and connect with the community.</p>
-      <button class="accordion" style="font-weight:bold; text-align:center">Upcoming Events</button>
-      <div class="panel">
-        <div class="row py-2">
-            
-        </div>
-      </div>
-      <div class= "text">
-      <p style="font-size: large;">Explore our past events for the engaging activities that we've hosted. Missed an event?  Don’t worry, Stay tuned for the upcoming events by joining our social media pages!</p>
-      </div>
-      <button class="accordion" style="font-weight:bold; text-align:center">Past Events</button>
-      <div class="panel">
-        <div class="row py-2">
-            <div class="col-6 col-md-4 col-lg-3 px-1">
-                <img src="../assets/Guest_lecture_May_4.png" style="width: 100%;" alt="">
+
+<div style="margin: auto;">
+    <div class="accordio" style="margin-left: 80px; margin-right: 80px; text-align: center; text-justify: inter-word;">
+        <p style="font-size: large; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            Stay tuned for upcoming events for informative talks, workshops, insightful webinars, and interactive sessions aimed at helping you expand your knowledge and connect with the community.
+        </p>
+        <div class="accordion" id="accordionPanelsStayOpenExample1">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Upcoming Events
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 px-1">
-                <img src="../assets/Earth-day-poster.jpeg" style="width: 100%;" alt="">
+          </div>
+    </div>
+
+    <div class="accordio" style="margin-left: 80px; margin-right: 80px; text-align: center; text-justify: inter-word;">
+        <p style="font-size: large; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+            Explore our past events for the engaging activities that we've hosted. Missed an event?  Don’t worry, Stay tuned for the upcoming events by joining our social media pages!
+        </p>
+        <div class="accordion" id="accordionPanelsStayOpenExample2">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Past Events
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                    <div class="row py-2">
+                        <div class="col-6 col-md-4 col-lg-3 px-1">
+                            <img src="../assets/Guest_lecture_May_4.png" style="width: 100%;" alt="">
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-3 px-1">
+                            <img src="../assets/Earth-day-poster.jpeg" style="width: 100%;" alt="">
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
-        </div>
-      </div>
-      </div>
+          </div>
+    </div>
+
+</div>
+
       <script>
       var acc = document.getElementsByClassName("accordion");
       var i;
@@ -147,29 +196,23 @@
         </div>
         
 <!--footer-->
-<div class="footer" style="margin: auto;">
-    <div class="row py-2 header-theme-bottom justify-content-center">
-        <div class="col justify-content-center">
-            <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">
-                <a href="https://www.iitk.ac.in/es/" target="_blank" style="color: white; text-decoration:solid;"><b>Earth Sciences</a></b>
-                <a href="https://www.iitk.ac.in/" target="_blank" style="color: white; text-decoration: none;"><b>IITK</a></b>
-            </p>
-        </div>
-        <span class="text-center">
-            <h6 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">
-                <a href="mailto:eageiitk@gmail.com" target="_blank"><i class="fa-solid fa-envelope icon-1" style="color: white;  vertical-align: text-bottom;"></i></a>&nbsp;
-                <a href="https://www.linkedin.com/company/eage-student-chapter-iit-kanpur/" target="_blank"><i class="fa-brands fa-linkedin icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
-                <a href="https://www.instagram.com/eage_sc_iitk/" target="_blank"><i class="fa-brands fa-instagram icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
-                <a href="https://www.facebook.com/profile.php?id=61557370555997" target="_blank"><i class="fa-brands fa-facebook icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
-                <a href="https://twitter.com/EageIitk84195" target="_blank"><i class="fa-brands fa-twitter icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
-            </h6>
-        </span>
-        <p class="text-center my-1" style="font-family: 'Times New Roman', Times, serif;">
-            &copy; 2024 <a href="" target="_blank" style="color: white;">EAGE_IITK_Student_Chapter</a>&nbsp;
+<div class="row py-2 header-theme-bottom justify-content-center" style="margin: auto; position: relative; bottom: -50vh;">
+    <div class="col justify-content-center">
+        <p class="text-center" style="font-family: 'Times New Roman', Times, serif;">
+            &nbsp;<a href="https://www.iitk.ac.in/es/" target="_blank" style="color: white; text-decoration:solid;"><b>Earth Sciences</a></b>&nbsp;
+            &#124;&nbsp;&nbsp;<a href="https://www.iitk.ac.in/" target="_blank" style="color: white; text-decoration: none;"><b>IIT Kanpur</a></b>&nbsp;
         </p>
     </div>
-    </div>
-
-
-
-
+    <span class="text-center">
+        <h6 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">
+            <a href="mailto:eageiitk@gmail.com" target="_blank"><i class="fa-solid fa-envelope icon-1" style="color: white;  vertical-align: text-bottom;"></i></a>&nbsp;
+            <a href="https://www.linkedin.com/company/eage-student-chapter-iit-kanpur/" target="_blank"><i class="fa-brands fa-linkedin icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
+            <a href="https://www.instagram.com/eage_sc_iitk/" target="_blank"><i class="fa-brands fa-instagram icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
+            <a href="https://www.facebook.com/profile.php?id=61557370555997" target="_blank"><i class="fa-brands fa-facebook icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
+            <a href="https://twitter.com/EageIitk84195" target="_blank"><i class="fa-brands fa-twitter icon-1" style="color: white; vertical-align: text-bottom;"></i></a>&nbsp;
+        </h6>
+    </span>
+    <p class="text-center my-1" style="font-family: 'Times New Roman', Times, serif;">
+        &copy; 2024 <a href="" target="_blank" style="color: white; text-decoration: none">EAGE IITK Student Chapter</a>&nbsp;
+    </p>
+</div>
