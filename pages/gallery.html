@@ -24,6 +24,12 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.with-link:hover{
+  img{
+    opacity: 0.6;
+  }
+}
+
 body {
   background-color: #f1f1f1;
   font-family: Arial;
@@ -200,6 +206,13 @@ body {
 <div class="row">
   <div class="column Talks">
     <div class="content">
+      <img src="../assets/Dec-10-talk.jpg" alt="" style="width: 100%;">
+      <h4 style="text-align: center; padding-top: 2vh;">Guest Lecture</h4>
+      <p style="text-align: center; text-justify: inter-word; padding-bottom: 3.2vh;"><b>By: Dr Ilius Mondal</b><br>Petrophysicist<br>bp Technical Solutions India (TSI), Pune </p>
+    </div>
+  </div>
+  <div class="column Talks">
+    <div class="content">
       <img src="../assets/Guest_lecture_May_4.png" alt="" style="width: 100%;">
       <h4 style="text-align: center; padding-top: 2vh;">Guest Lecture</h4>
       <p style="text-align: center; text-justify: inter-word; padding-bottom: 3.2vh;"><b>By: Dr Satya Narayan</b><br>Senior Geophysicist<br>ONGC, Dehradun </p>
@@ -207,8 +220,10 @@ body {
   </div>
   <div class="column events">
     <div class="content">
-      <img src="../assets/Earth-day-poster.jpeg" alt="" style="width:100%">
-      <h4 style="text-align: center; padding-top: 2vh;">Earth Day 2024</h4>
+      <a href="#" class="with-link" style="text-decoration: none; color: black;">
+        <img src="../assets/Earth-day-poster.jpeg" alt="" style="width:100%">
+        <h4 style="text-align: center; padding-top: 2vh;">Earth Day 2024</h4>
+      </a>
       <p style=" text-align: center; text-justify: inter-word; padding-bottom: 3.2vh;"><b>Guest Speaker: Mr. Robin Singh</b> (Co-founder of <a href="https://peepalfarm.org/" target="_blank">Peepal Farm</a>)</p>
     </div>
   </div>

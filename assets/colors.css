@@ -140,3 +140,8 @@
     color: #767676;
 }
 
+@font-face {
+    font-family: Ayam-Geprek;
+    src: url(AyamGeprekDemoRegular.ttf);
+  }
+ 
